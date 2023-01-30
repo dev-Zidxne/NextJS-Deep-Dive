@@ -1,9 +1,13 @@
-import React from "react";
+import { useRouter } from "next/router";
 
 // ourdomain/news/something-importnat
 
 function DetailPage() {
-  return <div>something-important</div>;
+  const router = useRouter();
+
+  const newsId = router.query.newsId;
+
+  return <div>Detail Page</div>;
 }
 
 export default DetailPage;
